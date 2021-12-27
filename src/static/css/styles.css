@@ -1,7 +1,9 @@
 body {
     background-color: #f4f4f4;
-    margin-top: 50px;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Lato';
+    width: 100%;
 }
 
 .item {

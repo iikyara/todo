@@ -1,13 +1,25 @@
 function App() {
-    const { Container, Row, Col } = ReactBootstrap;
+    const { Container, Row, Col, Navbar } = ReactBootstrap;
     return (
-        <Container>
+      <Container className="p-0 m-0 min-vw-100">
+        <Navbar variant="dark" bg="dark" sticky="top">
+          <Container>
+            <Navbar.Brand>
+              Remember something to do
+            </Navbar.Brand>
+          </Container>
+        </Navbar>
+        <Container className="pt-1 m-auto">
+            <h3>
+                Please add items.
+            </h3>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
                 </Col>
             </Row>
         </Container>
+      </Container>
     );
 }
 
